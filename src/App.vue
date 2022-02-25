@@ -18,7 +18,6 @@
 </template>
 
 <script>
-import { Observable } from 'windowed-observable';
 
 export default {
   name: 'App',
@@ -30,10 +29,8 @@ export default {
     };
   },
   mounted() {
-    this.observable = new Observable(this.channel);
-    this.observable.subscribe((item) => {
-      this.itemRecieved = item;
-    });
+    // eslint-disable-next-line no-return-assign
+    window.mitt.on(this.channel, (data) => this.itemRecieved = data);
   },
   methods: {
     callSaludo() {
