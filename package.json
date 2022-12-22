@@ -28,7 +28,7 @@
     "currency.js": "^2.0.4",
     "date-fns": "^2.23.0",
     "gridjs-vue": "^5.0.4",
-    "liquidjs": "^9.25.1",
+    "liquidjs": "^10.0.0",
     "v-money-no-negative": "^0.8.3",
     "vee-validate": "^3.4.5",
     "vue": "^2.6.14",
